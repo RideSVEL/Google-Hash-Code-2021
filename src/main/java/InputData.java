@@ -15,8 +15,8 @@ public class InputData {
 
     public InputData(List<String> lines) {
         parseFirstLine(lines.get(0).split(" "));
-        this.streetsLines = lines.subList(1, streetsS - 1);
-        this.waysLines = lines.subList(carsV, lines.size() - 1);
+        this.streetsLines = lines.subList(1, streetsS+1);
+        this.waysLines = lines.subList(streetsS+1, lines.size());
     }
 
     private void parseFirstLine(String[] s) {
