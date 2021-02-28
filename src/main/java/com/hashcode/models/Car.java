@@ -13,6 +13,6 @@ import java.util.List;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Car {
-    Integer numOfStreets;
-    final List<Street> streets;
+    Integer startIntersection;
+    List<Street> streets;
 }

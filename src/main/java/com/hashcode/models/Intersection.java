@@ -6,19 +6,20 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.FieldDefaults;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @EqualsAndHashCode
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Intersection {
 
-  Integer id;
-  ArrayList<Street> in;
-  ArrayList<Street> out;
+    int id;
+    List<Street> in;
+    List<Street> out;
 
-  public Intersection(Integer id) {
-    this.id = id;
-    this.in = new ArrayList<>();
-    this.out = new ArrayList<>();
-  }
+    public Intersection(Integer id) {
+        this.id = id;
+        this.in = new ArrayList<>();
+        this.out = new ArrayList<>();
+    }
 }

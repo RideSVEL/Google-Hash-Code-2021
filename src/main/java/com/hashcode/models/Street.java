@@ -12,11 +12,9 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Street {
     String name;
-
     Integer timeOnTrafficLight;
-
     Integer startIntersection;
-
     Integer endIntersection;
+    Integer counter;
 
 }
