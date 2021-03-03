@@ -18,6 +18,6 @@ public class Solver {
     }
 
     public void work() {
-        Arrays.stream(files).forEach(this::solve);
+        Arrays.stream(files).parallel().forEach(this::solve);
     }
 }
